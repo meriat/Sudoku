@@ -18,4 +18,12 @@ describe('Sudoku' , function() {
     var checkerResult = newBoard.rowChecker();
     expect(checkerResult).toEqual(true);
   });
+  it('should check whether column has all numbers from 0-2', function(){
+    var colresult = newBoard.colChecker();
+    expect(colresult).toEqual(true);
+  });
+  it('should check sudoku', function() {
+    var sudo = newBoard.ultChecker();
+    expect(sudo).toEqual(true);
+  });
 });
