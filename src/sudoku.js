@@ -3,15 +3,6 @@
 //   [1,2,0],
 //   [2,0,1] ];
 
-// export var Row = function(one, two, three) {
-//   var rowArray = [];
-//   rowArray.push(one);
-//   rowArray.push(two);
-//   rowArray.push(three);
-//   this.columns = rowArray.slice();
-// }
-// new Board([1,2,0],[2,1,0],[0,1,2])
-
 export var Board = function (rowOne, rowTwo, rowThree)
 {
   var tempArray= [];
@@ -20,12 +11,6 @@ export var Board = function (rowOne, rowTwo, rowThree)
   tempArray.push(rowThree);
   this.matrix = tempArray.slice();
 }
-
-// var rowOne = new Row(0,1,2);
-// var rowTwo = new Row(1,2,0);
-// var rowThree = new Row(2,0,1);
-// var newBoard = new Board(rowOne, rowTwo, rowThree);
-
 
 export var numberArray = [0,1,2];
 
