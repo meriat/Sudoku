@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- <script type="text/javascript" src="bundle.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>SudokuChecker</title>
-  </head>
-  <body>
-    <h1 class="jumbotron">SudokuChecker</h1>
-    <div class="container">
-    </div>
-  </body>
+<head>
+  <!-- <script type="text/javascript" src="bundle.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>SudokuChecker</title>
+</head>
+<body>
+  <h1 class="jumbotron">SudokuChecker</h1>
+  <div class="container">
+    <form id="form">
+      <div class="flex-container">
+        <div> <input id="00" type="number" class="inputNumbers"></div>
+        <div> <input type="number" class="inputNumbers"></div>
+        <div> <input type="number" class="inputNumbers"></div>
+      </div>
+
+      <div class="flex-container">
+        <div> <input type="number" class="inputNumbers"></div>
+        <div> <input type="number" class="inputNumbers"></div>
+        <div> <input type="number" class="inputNumbers"></div>
+      </div>
+
+      <div class="flex-container">
+        <div> <input type="number" class="inputNumbers"></div>
+        <div> <input type="number" class="inputNumbers"></div>
+        <div> <input type="number" class="inputNumbers"></div>
+      </div>
+      <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+
+  </div>
+</body>
 </html>
