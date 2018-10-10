@@ -12,7 +12,7 @@ export var Board = function (rowOne, rowTwo, rowThree)
   this.matrix = tempArray.slice();
 }
 
-export var numberArray = [0,1,2];
+export var numberArray = [1,2,3];
 
 
 Board.prototype.rowChecker = function () {

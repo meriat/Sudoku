@@ -2,6 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
+import { Board } from './sudoku';
 
 $(document).ready(function() {
     $('#form').submit(function(event){
@@ -23,6 +24,8 @@ $(document).ready(function() {
           allInputsInRow.push(parseInt($(inputNumber).val()));
         }
       });
-      console.log(allInputs);
+      var newBoard = new Board(allInputs[0], allInputs[1], allInputs[2]);
+      var status = newBoard.ultChecker();
+      console.log(status);
     });
 });
